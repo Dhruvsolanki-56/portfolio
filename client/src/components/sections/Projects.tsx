@@ -4,19 +4,19 @@ import ProjectCard from '../ui/project-card';
 
 const projects = [
   {
-    title: 'Project One',
-    description: 'A modern web application built with React and TypeScript',
-    tags: ['React', 'TypeScript', 'Tailwind'],
+    title: 'E-Cab',
+    description: 'A modern Cab booking application built with PHP',
+    tags: ['PHP', 'HTML', 'JAVASCRIPT'],
   },
   {
-    title: 'Project Two',
+    title: 'GLS Quizee',
     description: 'Full-stack application with real-time features',
-    tags: ['Node.js', 'Socket.io', 'MongoDB'],
+    tags: ['PHP'],
   },
   {
-    title: 'Project Three',
-    description: 'Mobile-first responsive design implementation',
-    tags: ['React Native', 'Redux', 'Firebase'],
+    title: 'Protfolio Site',
+    description: 'Responsive design implementation',
+    tags: ['React Native', 'Typescript'],
   },
 ];
 
