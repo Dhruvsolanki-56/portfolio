@@ -34,7 +34,7 @@ export default function Intro() {
 
       <div className="max-w-4xl mx-auto px-4 py-20 text-center relative z-10">
         <TextReveal className="text-6xl md:text-8xl font-bold mb-6 font-['Space_Grotesk']">
-          Creative Developer
+          Dhruv's Protfolio
           <motion.span
             className="absolute -right-8 -top-8 w-16 h-16 bg-primary/20 rounded-full blur-xl"
             {...floatingAnimation}
