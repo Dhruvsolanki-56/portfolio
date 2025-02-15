@@ -20,33 +20,58 @@ const projects = [
   },
 ];
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.3,
+    },
+  },
+};
+
 export default function Projects() {
   return (
     <SectionWrapper id="projects" className="min-h-screen flex items-center bg-[#2A2A2A]/20">
-      <div className="max-w-6xl mx-auto px-4 py-20">
+      <motion.div 
+        className="max-w-6xl mx-auto px-4 py-20"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-bold mb-12 text-center font-['Space_Grotesk']"
+          className="text-4xl md:text-5xl font-bold mb-12 text-center font-['Space_Grotesk'] relative"
         >
           Featured Projects
+          <motion.div
+            className="absolute -inset-2 -z-10 bg-primary/20 blur-xl rounded-full"
+            animate={{
+              scale: [1, 1.2, 1],
+              opacity: [0.5, 0.8, 0.5],
+            }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
+          />
         </motion.h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <motion.div
+            <ProjectCard 
               key={project.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.2 }}
-            >
-              <ProjectCard {...project} />
-            </motion.div>
+              {...project}
+              index={index}
+            />
           ))}
         </div>
-      </div>
+      </motion.div>
     </SectionWrapper>
   );
 }
