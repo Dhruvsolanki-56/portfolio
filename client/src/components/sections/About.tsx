@@ -71,6 +71,7 @@ export default function About() {
                   repeatType: "reverse",
                 }}
               />
+              <img src="2025_02_02_00_23_IMG_9433.JPG" alt="Image" className="w-full h-full object-cover rounded-xl" />
             </div>
           </div>
         </motion.div>
