@@ -40,12 +40,12 @@ export default function About() {
 
           <div className="space-y-4 text-lg text-[#FFFFFF80] font-['SF_Pro_Display']">
             <TextReveal delay={0.2}>
-              I'm a passionate developer focused on creating immersive web experiences
-              that combine beautiful design with powerful functionality.
+             Hey there! I'm a 20-year-old tech enthusiast currently pursuing my MSc in Information Technology at GLS University, 
+              set to graduate in 2026. I previously earned my Bachelor of Computer Applications (BCA) from C.U. Shah College in 2024.
             </TextReveal>
             <TextReveal delay={0.4}>
-              With expertise in modern web technologies and a keen eye for detail,
-              I bring ideas to life through clean code and thoughtful user experiences.
+              I have a deep passion for web development, UI/UX design, and interactive experiences. 
+              My expertise spans React, PHP, Python, JavaScript, and CSS, allowing me to build dynamic, modern, and visually engaging web applications.
             </TextReveal>
           </div>
         </div>
